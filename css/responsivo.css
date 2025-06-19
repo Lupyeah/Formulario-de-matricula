@@ -1,0 +1,74 @@
+@media (max-width: 1024px) {
+    body {
+        overflow: auto;
+    }
+
+    #app {
+        grid-template-columns: 100%;
+        height: auto;
+    }
+
+    aside {
+        order: 1;
+        display: block;
+        width: 100%;
+        padding: 2rem 1.5rem;
+        border-bottom: 1px dashed black;
+
+        .aside-container {
+            max-width: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo {
+            margin-left: -11rem;
+            width: 60%;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        >img {
+            width: 65%;
+            margin-left: 4rem;
+        }
+    }
+
+    main {
+        order: 2;
+        padding: 2rem 1.5rem;
+
+        .main-container {
+            max-width: 100%;
+            margin-inline: auto;
+        }
+
+    }
+
+    .address .flex {
+        flex-direction: column;
+    }
+
+    .action-wrapper {
+        flex-direction: column-reverse;
+
+        .btn-secundary {
+            margin-left: 0;
+        }
+
+        button {
+            width: 85%;
+            text-align: center;
+        }
+    }
+}
